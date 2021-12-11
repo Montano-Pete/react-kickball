@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the homepage 1`] = `
+<div>
+  <div>
+    <h1>
+      Kickball!!!
+    </h1>
+    <a
+      href="/teams"
+    >
+      Go to teams
+    </a>
+     
+    <a
+      href="/players"
+    >
+      Go to players
+    </a>
+  </div>
+</div>
+`;
