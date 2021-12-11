@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
-import TeamList from './Teams/TeamList';
+import TeamList from './TeamList';
 
 it('should render a view of the list of teams', async () => {
   render(
