@@ -16,6 +16,6 @@ it('should render a detailed view of an individual team', async () => {
   const teamName = await screen.findByText('Bridge City Sneakers', {
     exact: false,
   });
-  screen.debug();
+
   expect(teamName).toBeInTheDocument();
 });
