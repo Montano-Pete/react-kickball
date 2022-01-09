@@ -42,6 +42,9 @@ function TeamList() {
       <Link to="/">Go to homepage</Link>{' '}
       <Link to="/players">Go to players</Link>
       <h1>Kickball Teams:</h1>
+      <Link to="/teams/createTeam" className="App-Link">
+        Create A Team
+      </Link>
       <ul>
         {teams.map((team) => (
           <li key={team.id}>
@@ -53,7 +56,6 @@ function TeamList() {
             </button>
             <button
               type="button"
-              value={'delete'}
               aria-label={`delete team ${team.name}`}
               onClick={() => handleDelete({ id: team.id, name: team.name })}
             >
