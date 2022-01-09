@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useHistory, useParams } from 'react-router';
 import TeamForm from '../../../components/TeamForm';
-import { updateTeamById } from '../../services/teams';
+import { updateTeamById } from '../../../services/teams';
 
 function UpdateTeam() {
   const { teamId } = useParams();
