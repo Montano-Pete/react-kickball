@@ -3,7 +3,7 @@ import TeamForm from '../../../components/TeamForm';
 import { createTeam } from '../../../services/teams';
 import { useHistory } from 'react-router-dom';
 
-export default function AddTeam() {
+function AddTeam() {
   const [name, setName] = useState('');
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
@@ -34,3 +34,5 @@ export default function AddTeam() {
     </>
   );
 }
+
+export default AddTeam;

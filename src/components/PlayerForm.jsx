@@ -29,7 +29,7 @@ function PlayerForm({
         onChange={(event) => setPosition(event.target.value)}
       />
 
-      <label htmlFor="teamId">Team:</label>
+      <label htmlFor="teamId">Team ID:</label>
       <input
         id="teamId"
         name="teamId"
