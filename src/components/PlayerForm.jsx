@@ -38,7 +38,7 @@ function PlayerForm({
         onChange={(event) => setTeamId(event.target.value)}
       />
 
-      <button type="submit" aria-label="submit form">
+      <button type="submit" aria-label="player-submit">
         Submit
       </button>
     </form>
