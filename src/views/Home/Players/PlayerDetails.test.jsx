@@ -4,16 +4,18 @@ import PlayerDetails from './PlayerDetails';
 
 it('should render a detailed view of an individual player', async () => {
   render(
-    <MemoryRouter initialEntries={['/players/6']}>
+    <MemoryRouter initialEntries={['/players/1']}>
       <Route path="/players/:playerId">
         <PlayerDetails />
       </Route>
     </MemoryRouter>
   );
 
-  const playerName = await screen.findByText('Terry Cruise', { exact: false });
+  const playerName = await screen.findByText('Benny Rodriguez', {
+    exact: false,
+  });
   const playerDescription = await screen.findByText(
-    'Catcher for the Stumptown Lumberjacks',
+    'Pitcher for the Bridge City Sneakers',
     { exact: false }
   );
 

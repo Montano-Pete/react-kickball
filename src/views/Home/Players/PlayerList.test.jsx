@@ -11,17 +11,21 @@ it('should render a view of a list of players', async () => {
     </MemoryRouter>
   );
 
-  const playerOne = await screen.findByText('Bennie Jetts', {
+  const playerOne = await screen.findByText('Alonzo Baller', {
     exact: false,
   });
-  const playerTwo = await screen.findByText('Buster Rimes', {
+  const playerTwo = await screen.findByText('Benny Rodriguez', {
     exact: false,
   });
-  const playerThree = await screen.findByText('Ron Long', {
+  const playerThree = await screen.findByText('Johnny B. Gooding', {
+    exact: false,
+  });
+  const playerFour = await screen.findByText('Pete Harmoney', {
     exact: false,
   });
 
   expect(playerOne).toBeInTheDocument();
   expect(playerTwo).toBeInTheDocument();
   expect(playerThree).toBeInTheDocument();
+  expect(playerFour).toBeInTheDocument();
 });
